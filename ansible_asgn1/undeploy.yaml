@@ -1,0 +1,29 @@
+---
+- name: Un-deploy Webserver on VM1 and VM2
+  hosts: webservers
+  become: yes
+  tasks:
+    # Stop the Apache service
+    - name: Stop Apache service
+      service:
+        name: apache2
+        state: stopped
+
+    # Disable Apache service on boot
+    - name: Disable Apache service on boot
+      systemd:
+        name: apache2
+        enabled: no
+
+    # Uninstall Apache web server
+    - name: Uninstall Apache web server
+      apt:
+        name: apache2
+        state: absent
+
+    # Remove the index.html file
+    - name: Remove index.html file
+      file:
+        path: /var/www/html/index.html
+        state: absent
+
