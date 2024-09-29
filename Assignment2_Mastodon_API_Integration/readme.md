@@ -4,6 +4,8 @@ The goal of this assignment is to develop a simple service that interacts with t
 ### What is Mastodon?
 Mastodon is a free, open-source social media platform developed by a non-profit organization and is similar to Twitter. Mastodon is not a single website; to use it we need to make an account with provider called Servers, that lets us connect to other people across Mastodon.
 
+###### Document Link: https://github.com/BharathiVetukuri/CMPE-272_EnterpriseSoftwarePlatforms/blob/main/Assignment2_Mastodon_API_Integration/HW%20%232%20-%20Mastodon%20API%20Integration.pdf 
+
 ##### Step 1. Sign Up for a Mastodon Developer Account:
 ![image](https://github.com/user-attachments/assets/d5569fc1-4174-4769-b5c4-5b6069078535) 
 
